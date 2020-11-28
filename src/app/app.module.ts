@@ -10,13 +10,15 @@ import {RouterModule} from '@angular/router';
 import {PostService} from './api/post/post.service';
 import { PostDetailsComponent } from './pages/post-details/post-details.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SecretsComponent } from './pages/secrets/secrets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsListComponent,
     PostDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    SecretsComponent
   ],
   imports: [
     BrowserModule,
