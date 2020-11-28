@@ -8,11 +8,15 @@ import { PostsListComponent } from './pages/posts-list/posts-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import {RouterModule} from '@angular/router';
 import {PostService} from './api/post/post.service';
+import { PostDetailsComponent } from './pages/post-details/post-details.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsListComponent
+    PostsListComponent,
+    PostDetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -19,7 +19,7 @@
     <td>{{ p.title }}</td>
     <td>
       <button type="button" class="btn btn-danger" (click)="deletePost(p)">Delete</button> &nbsp;
-      <button type="button" class="btn btn-primary">View</button>
+      <a class="btn btn-primary" [routerLink]="['/posts', p.id]">View</a>
     </td>
   </tr>
   </tbody>
