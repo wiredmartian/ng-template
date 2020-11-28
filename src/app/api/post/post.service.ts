@@ -15,4 +15,7 @@ export class PostService {
   getPosts(): Observable<IPost[]> {
     return this.http.get<IPost[]>('/posts');
   }
+  removePost(postId: number): Observable<any> {
+    return this.http.delete(`/posts/${postId}`);
+  }
 }
